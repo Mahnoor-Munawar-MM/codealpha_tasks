@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Gallery Container -->
+    <div class="gallery-container">
+        <div class="gallery-item" data-index="1"><img src="Images/1.jpg" alt="image 1" onclick="openLightbox(0)"></div>
+        <div class="gallery-item" data-index="2"><img src="Images/2.jpg" alt="image 2" onclick="openLightbox(1)"></div>
+        <div class="gallery-item" data-index="3"><img src="Images/3.jpg" alt="image 3" onclick="openLightbox(2)"></div>
+        <div class="gallery-item" data-index="4"><img src="Images/4.jpg" alt="image 4" onclick="openLightbox(3)"></div>
+        <div class="gallery-item" data-index="5"><img src="Images/5.jpg" alt="image 5" onclick="openLightbox(4)"></div>
+        <div class="gallery-item" data-index="6"><img src="Images/6.jpg" alt="image 6" onclick="openLightbox(5)"></div>
+        <div class="gallery-item" data-index="7"><img src="Images/7.jpg" alt="image 7" onclick="openLightbox(6)"></div>
+        <div class="gallery-item" data-index="8"><img src="Images/8.jpg" alt="image 8" onclick="openLightbox(7)"></div>
+        <div class="gallery-item" data-index="9"><img src="Images/9.jpg" alt="image 9" onclick="openLightbox(8)"></div>
+    </div>
+    <!-- Light Box -->
+    <div id="lightbox">
+        <span class="close" onclick="closeLightbox()">&times;</span>
+        <button class="prev" onclick="changeImage(-1)">❮</button>
+        <img id="lightbox-img">
+        <button class="next" onclick="changeImage(1)">❯</button>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
